@@ -1,6 +1,7 @@
 import os
 
 TODO_FILE = "todo.txt"
+print("CI Pipeline Success")
 
 def load_tasks():
     if not os.path.exists(TODO_FILE):
