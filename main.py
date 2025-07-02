@@ -3,6 +3,9 @@ import os
 TODO_FILE = "todo.txt"
 print("CI Pipeline Success")
 print("This is the positive build case")
+print("This line will cause a syntax error)
+add_task("Missing parenthesis"
+raise Exception("Simulating build failure!")
 
 def load_tasks():
     if not os.path.exists(TODO_FILE):
