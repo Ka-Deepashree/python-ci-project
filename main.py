@@ -29,9 +29,10 @@ def list_tasks():
             print(f"{i}. {task}")
 
 def main():
-    print("Welcome to Simple To-Do App\n")
+    print("Welcome to the CI/CD Pipeline Demo!")
     add_task("Prepare CI demo")
     add_task("Push code to GitHub")
+    add_task("Test GitHub webhook trigger")
     list_tasks()
 
 if __name__ == "__main__":
