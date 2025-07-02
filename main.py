@@ -17,14 +17,14 @@ def add_task(task):
     tasks = load_tasks()
     tasks.append(task)
     save_tasks(tasks)
-    print(f"✅ Task added: {task}")
+    print(f"Task added: {task}")
 
 def list_tasks():
     tasks = load_tasks()
     if not tasks:
-        print("📭 No tasks found.")
+        print("No tasks found.")
     else:
-        print("📝 Your Tasks:")
+        print("Your Tasks:")
         for i, task in enumerate(tasks, 1):
             print(f"{i}. {task}")
 
